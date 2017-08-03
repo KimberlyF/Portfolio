@@ -1,111 +1,211 @@
-
 <!DOCTYPE html>
+
 <html>
+
 <body background="sparkle.png">
+
 <center><h1><u><font face="Comic Sans MS" color="green">About Me</font></u></h1></center> 
+
 <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
-<script>
-function Welcome() {
-     alert("Welcome to my website!");
-}  
-    
-    var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
 
 <style>
-div {    
+
+div {
+
     background-color: lightgrey;
+
     width: 300px;
+
     border: 25px solid DarkSlateGray;
+
     padding: 25px;
+
     margin: 25px;
+
 }
+
     
+
 body {
+
     font-family: 'Cambay';font-size: 14px;
+
 }
-    
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+
 .mySlides {display:none}
+
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
+
 .w3-badge {height:13px;width:13px;padding:0}
-    
+
 </style>
+
 <body>
 
+
+
 <div class="w3-container">
+
   <h2>Slideshow Indicators</h2>
+
   <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+
 </div>
+
+
 
 <div class="w3-content w3-display-container" style="max-width:800px">
+
   <img class="mySlides" src="KimberlyFongPic1.JPG" style="width:100%">
+
   <img class="mySlides" src="KimberlyFongPic2'.JPG" style="width:100%">
+
   <img class="mySlides" src="KimberlyFongPic1.JPG" style="width:100%">
+
   <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+
     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+
   </div>
+
 </div>
 
 
- 
+
+<script>
+
+var slideIndex = 1;
+
+showDivs(slideIndex);
+
+
+
+function plusDivs(n) {
+
+  showDivs(slideIndex += n);
+
+}
+
+
+
+function currentDiv(n) {
+
+  showDivs(slideIndex = n);
+
+}
+
+
+
+function showDivs(n) {
+
+  var i;
+
+  var x = document.getElementsByClassName("mySlides");
+
+  var dots = document.getElementsByClassName("demo");
+
+  if (n > x.length) {slideIndex = 1}    
+
+  if (n < 1) {slideIndex = x.length}
+
+  for (i = 0; i < x.length; i++) {
+
+     x[i].style.display = "none";  
+
+  }
+
+  for (i = 0; i < dots.length; i++) {
+
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+
+  }
+
+  x[slideIndex-1].style.display = "block";  
+
+  dots[slideIndex-1].className += " w3-white";
+
+}
+
+</script>
+
+</style>    
+
     
+
 <div><h2><u>Kimberly Fong</u></h2>
+
 <p>I am a rising senior at Brooklyn Technical High School. I was born on September 4th, 2000, and am almost 17 years old. I love photography, music, and food. I should probably write more than this but I'm not sure what to write</p></div>
 
+
+
 <div><h3><u>My favorite Webpages (Social Media)</u></h3> 
+
 <a href="https://www.facebook.com">Facebook</a> 
+
 <a href="https://www.youtube.com">Youtube</a> 
+
 <a href="https://www.Tumblr.com">Tumblr</a> 
+
 <a href="https://www.Instagram.com">Instagram</a> 
+
 <button type="button" onclick="alert('Hello world!')">Click Me!</button></div>
+
 <div><h3><u>Likes</u></h3>
+
   <p>I really like (more like love) fried chicken, bubble tea, and Dippin' Dots ice cream.</p>
+
 <h3><u>Dislikes</u></h3>
+
   <p>I dislike clowns, bugs, and broccoli</p>
+
 <h3><u>Funfact!</u></h3> 
+
   <p>I can play over 4 instruments. THIS IS NOT FINISHED AT ALL I NEED TO FIX ALL OF IT :'(</p></div>
+
 <div><h3><u>Side Scroller Game!</u></h3>  
+
   <img src="Scratch Scroller.PNG" alt="Scratch Scroller" style="width:304px;height:228px;">
+
   <p>My side scroller game is called Underwater Attack. Click <a href="https://scratch.mit.edu/projects/168488866/">here</a> if you want to play it!</p></div>
+
 <div><h3><u>Robot Update</u></h3>
+
   <p>I re-learned how to breadboard, and connect two LEDs to the board of the robot. I also re-learned how to connect two resistors and wires to that same breadboard.</p>
+
   <img src="robot1.png" alt="Robot 1" style="width:304px;height:228px;"></div>
+
 <div><h3><u> JavaScript Functions</u></h3>
+
 <button onClick="Welcome()"> Click here! :)</button></div>
 
+<script>
+
+function Welcome() {
+
+     alert("Welcome to my website!");
+
+}  
+
   
+
     
+
   </body>
+
 </html>    
